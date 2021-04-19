@@ -28,4 +28,5 @@ Feature: Save Hotel booking
   And surName as Test2
   When clicks on Delete Button
   Then Successfully deletes the booking record of surname
+  And close browser
 

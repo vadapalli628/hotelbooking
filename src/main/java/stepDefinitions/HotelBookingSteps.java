@@ -80,11 +80,24 @@ public class HotelBookingSteps extends BaseStep {
     }
 
     @When("clicks on Delete Button")
-    public void clicks_on_delete_button() {
+    public void clicks_on_delete_button() throws InterruptedException  {
         bookingFormPage.clickDeleteButton();
+        Thread.sleep(3000);
         System.out.println("Clicked Deleted Button");
     }
 
+    @Given("the form firstname Test1")
+    public void the_form_firstname_test1() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("selected the first name record");
+    }
+
+
+    @Given("surName as Test2")
+    public void sur_name_as_test2() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("selected the surname record");
+    }
 
     @Then("Successfully deletes the booking record of surname")
     public void successfully_deletes_the_booking_record_of_surname() {

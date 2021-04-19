@@ -61,21 +61,6 @@ public class BookingFormPage {
 		Price_TextField.sendKeys(price);
 	}
 
-/*
-	public void verifyDefaultDeposit () {
-		
-		Select select = new Select(Deposit);
-
-		WebElement option = select.Dep();
-		String defaultItem = option.getText();		
-		if(defaultItem.equals("true")) {
-			System.out.println("The default true is selected");
-		}else 
-			System.out.println("The default is not true");
-
-			//*[@id="bookings"]
-
-		}*/
 
 	public void enterCheckin(String checkinDate) {
 		Checkin_TextField.clear();
